@@ -1,0 +1,208 @@
+/*
+font-family: 'Lacquer', ;
+font-family: 'Raleway', ;
+*/
+/*#595857*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Raleway', sans-serif;
+}
+
+/*NAWIGACJA*/
+
+nav {
+    padding: 2vh;
+    background-color: black;
+
+
+
+}
+
+nav a {
+    display: block;
+    width: 80px;
+    margin: 0 auto;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+
+nav i {
+    font-size: 24px;
+}
+
+
+@media (orientation:landscape) {
+
+    nav {
+        box-sizing: content-box;
+        position: absolute;
+        height: 100%;
+        min-width: 24px;
+        padding: 0 3vh;
+
+    }
+
+    nav a {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-45%);
+        width: auto;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+}
+
+@media (min-width: 1024px) {
+    nav {
+        min-width: 30px;
+    }
+
+    nav i {
+        font-size: 30px;
+    }
+
+}
+
+/*CYTAT I ZDJĘCIE */
+
+.wrapper {
+    position: relative;
+    /*    background-color: aqua;*/
+    height: 80vh;
+}
+
+.quote,
+.image {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+
+.quote {
+    width: 70%;
+}
+
+.quote h1,
+p {
+    margin-top: 10%;
+    font-size: 14px;
+    color: #595857;
+}
+
+.quote h1 {
+    text-align: left;
+}
+
+.quote p {
+    text-align: right;
+}
+
+
+
+.image {
+    bottom: 0;
+}
+
+.image img {
+    width: 200px;
+    border-radius: 50%;
+    opacity: 90%;
+
+}
+
+
+@media (min-width:768px) {
+
+    .quote h1,
+    p {
+        font-size: 24px;
+    }
+}
+
+@media (orientation:landscape) {
+
+    .wrapper {
+
+        height: 100vh;
+        width: 85%;
+    }
+
+    .quote,
+    .image {
+        top: 50%;
+        transform: translateY(-50%);
+        /*        transform: translateX(0);*/
+
+    }
+
+    .quote {
+        left: 20%;
+        width: 40%;
+    }
+
+    .quote h1,
+    p {
+        margin-top: 10%;
+        font-size: 12px;
+
+    }
+
+
+
+
+    .image {
+        bottom: auto;
+        left: auto;
+        right: 0;
+    }
+
+    .image img {
+        width: 150px;
+    }
+}
+
+@media (min-width: 1024px) {
+
+    .quote h1,
+    p {
+        margin-top: 10%;
+        font-size: 22px;
+
+    }
+
+    .image img {
+        width: 250px;
+    }
+}
+
+
+/*IKONKA INSTAGRAMA*/
+.media {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.media i {
+    color: black;
+    font-size: 40px;
+}
+
+@media (orientation:landscape) {
+    .media {
+
+        bottom: auto;
+        left: auto;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
